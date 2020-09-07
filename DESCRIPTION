@@ -1,0 +1,34 @@
+Package: AzureR
+Title: Easily install Azure R Packages
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Hong",
+             family = "Ooi",
+             role = c("aut", "cre"),
+             email = "hongooi@microsoft.com"),
+      person(given = "Microsoft",
+             role = "cph"))
+Description: A metapackage to easily install all Azure R
+    packages.
+License: MIT + file LICENSE
+URL: https://github.com/Azure/AzureR
+BugReports: https://github.com/Azure/AzureR/issues
+Depends: 
+    R (>= 3.3)
+Imports: 
+    AzureAuth (>= 1.2.4),
+    AzureCognitive (>= 1.0.0),
+    AzureContainers (>= 1.3.0),
+    AzureGraph (>= 1.1.1),
+    AzureKeyVault (>= 1.0.3),
+    AzureKusto (>= 1.0.6),
+    AzureQstor (>= 1.0.0),
+    AzureRMR (>= 2.3.5),
+    AzureStor (>= 3.2.3),
+    AzureVision (>= 1.0.1),
+    AzureVM (>= 2.2.1),
+    AzureVMmetadata (>= 1.0.0)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
