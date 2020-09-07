@@ -22,10 +22,10 @@ AzureR_update <- function(recursive = FALSE, repos = getOption("repos")) {
 
   cat("The following packages are out of date:")
   cat("\n")
-  cat(behind[c("Package", "Installed", "ReposVer")])
+  print(behind[c("Package", "Installed", "ReposVer")], row.names = FALSE)
 
   cat("\n")
-  cat("Start a clean R session then run:")
+  cat("Start a clean R session then run:  ")
 
   pkg_str <- paste0(deparse(behind$Package), collapse = "\n")
   cat("install.packages(", pkg_str, ")")
